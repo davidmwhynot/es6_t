@@ -105,12 +105,43 @@ function video3() {
 
 
 function video4() {
-   
+   let theString = "Hello my name is David and I love Javascript";
+
+   console.log(theString.startsWith('Hello'));
+   console.log(theString.endsWith('Javascript'));
+   console.log(theString.includes('love'));
+
+
+   // hex
+   console.log(0xFF);
+   // binary
+   console.log(0b1010101);
+   // octal
+   console.log(0o543);
+   console.log(Number.isFinite(3));
+   console.log(Number.isFinite(Infinity));
+   console.log(Number.isFinite(NaN));
+   console.log(Number.isNaN('asdf'));
+   console.log(Number.isInteger(-25));
 }
 
 
 function video5() {
+   function greet($greeting = 'Hello World') {
+      console.log($greeting);
+   }
 
+   greet();
+
+   // spread operator !!!!!!!!
+
+   let args = [1,2,3];
+
+   function test() {
+      console.log(args);
+   }
+
+   test(...args);
 }
 
 
@@ -129,7 +160,7 @@ function video8() {
 }
 
 
-video4();
+video5();
 
 
 /*
